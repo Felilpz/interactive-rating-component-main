@@ -77,8 +77,9 @@ main p {
 }
 
 .special {
-    color: var(--Cinza);
-    background-color: var(--CinzaEscuro3);
+    color: var(--Branco) !important;
+    background-color: var(--Laranja) !important;
+    font-weight: 400;
 }
 
 .buttons {
@@ -91,11 +92,13 @@ main p {
     background-color: var(--CinzaEscuro3);
 }
 
-.buttons:hover {
+
+
+/* .buttons:hover {
     background-color: var(--Cinza);
     color: var(--Branco);
     transition: .4s;
-}
+} */
 
 .buttons:active {
     background-color: var(--Laranja);
@@ -109,13 +112,13 @@ main p {
     padding-top: 20px;
 }
 
-#mainButton {
+#mainButton2 {
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
 
-.mainButton {
+#mainButton {
     width: 320px;
     padding: 10px;
     border: none;
@@ -133,7 +136,7 @@ main p {
 }
 
 /* Agradecimentos */
-.thanks {
+#thanks {
     display: none;
     justify-content: center;
     align-items: center;
@@ -145,7 +148,7 @@ main p {
     padding: 20px;
 }
 
-.thanks p.selected {
+#thanks p.selected {
     color: var(--Laranja);
     font: 400;
     margin-top: 30px;
@@ -184,7 +187,7 @@ p.text {
         height: 40px;
     }
 
-    .thanks {
+    #thanks {
         width: 80%;
     }
 
