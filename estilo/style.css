@@ -94,11 +94,11 @@ main p {
 
 
 
-/* .buttons:hover {
+.buttons:hover {
     background-color: var(--Cinza);
     color: var(--Branco);
     transition: .4s;
-} */
+}
 
 .buttons:active {
     background-color: var(--Laranja);
@@ -129,10 +129,12 @@ main p {
     font-weight: 500;
 }
 
-.mainButton:hover {
-    background-color: var(--Cinza);
+#mainButton:hover {
+    background-color: var(--Branco);
     color: var(--Laranja);
-    transition: .4s;
+    letter-spacing: 5px;
+    font-weight: bold;
+    transition: .6s;
 }
 
 /* Agradecimentos */
