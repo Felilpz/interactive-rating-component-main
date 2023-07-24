@@ -13,8 +13,8 @@ const buttons = document.querySelectorAll('.buttons');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        let take = button.innerHTML
-
+        // console.log(button.innerHTML);
+        let buttonS = document.getElementById('numeracao')
         // se tiver um botão selecionado e não for o mesmo que foi clicado a classe special é removida
         if (selectedButton && selectedButton !== button) {
             selectedButton.classList.remove('special');
@@ -29,35 +29,34 @@ buttons.forEach((button) => {
             button.classList.remove('special');
         }
 
-        //Atualize a referência do botão selecionado CHATGPT
-        selectedButton = isSelected ? null : button;
-
+        //Atualize a referência do botão selecionado 
+        // selectedButton = isSelected ? null : button;
+        
 
         const mainButton = document.getElementById('mainButton')
-
-        mainButton.addEventListener('click', function () {
-            let rate = document.getElementById('numeracao') // rating
-            if(take == 1) {
-                rate.innerHTML = 1
+        mainButton.addEventListener('click', function() {
+            if(button.innerHTML == 1) {
+                buttonS.innerHTML = 1
                 document.getElementById('thanks').style.display = 'flex'
                 document.querySelector('.principal').style.display = 'none'
-            } else if(take == 2) {
-                rate.innerHTML = 2
+            } else if(button.innerHTML == 2) {
+                buttonS.innerHTML = 2
                 document.getElementById('thanks').style.display = 'flex'
                 document.querySelector('.principal').style.display = 'none'
-            } else if(take == 3) {
-                rate.innerHTML = 3
+            } else if(button.innerHTML == 3) {
+                buttonS.innerHTML = 3
                 document.getElementById('thanks').style.display = 'flex'
                 document.querySelector('.principal').style.display = 'none'
-            } else if(take == 4) {
-                rate.innerHTML = 4
+            } else if(button.innerHTML == 4) {
+                buttonS.innerHTML = 4
                 document.getElementById('thanks').style.display = 'flex'
                 document.querySelector('.principal').style.display = 'none'
             } else {
-                rate.innerHTML = 5
+                buttonS.innerHTML = 5
                 document.getElementById('thanks').style.display = 'flex'
                 document.querySelector('.principal').style.display = 'none'
             }
         })
     });
 });
+
