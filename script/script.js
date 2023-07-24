@@ -30,7 +30,7 @@ buttons.forEach((button) => {
         }
 
         //Atualize a referência do botão selecionado 
-        // selectedButton = isSelected ? null : button;
+        selectedButton = isSelected ? null : button;
         
 
         const mainButton = document.getElementById('mainButton')
